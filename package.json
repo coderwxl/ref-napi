@@ -1,6 +1,6 @@
 {
-  "name": "ref-napi",
-  "description": "Turn Buffer instances into \"pointers\". fix bug: \"crash in v8::ArrayBuffer::GetBackingStore\" test",
+  "name": "@coderwxl/ref-napi",
+  "description": "Turn Buffer instances into \"pointers\". fix bug: \"crash in v8::ArrayBuffer::GetBackingStore\"",
   "engines": {
     "node": ">= 10.0"
   },
@@ -28,13 +28,15 @@
     "type": "git",
     "url": "git://github.com/coderwxl/ref-napi.git"
   },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  },
   "main": "./lib/ref.js",
   "scripts": {
     "docs": "node docs/compile",
     "test": "nyc mocha --expose-gc",
     "install": "node-gyp-build",
-    "prebuild": "prebuildify --napi --tag-armv",
-    "prepack": "prebuildify-ci download && ([ $(ls prebuilds | wc -l) = '5' ] || (echo 'Some prebuilds are missing'; exit 1))"
+    "prebuild": "prebuildify --napi --tag-armv"
   },
   "dependencies": {
     "debug": "^4.3.1"
