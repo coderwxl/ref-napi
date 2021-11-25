@@ -1,6 +1,6 @@
 {
   "name": "ref-napi",
-  "description": "Turn Buffer instances into \"pointers\". fix bug: \"crash in v8::ArrayBuffer::GetBackingStore\"",
+  "description": "Turn Buffer instances into \"pointers\". fix bug: \"crash in v8::ArrayBuffer::GetBackingStore\" test",
   "engines": {
     "node": ">= 10.0"
   },
