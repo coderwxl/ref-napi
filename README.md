@@ -10,6 +10,8 @@ ref-napi
 [![Coverage Status](https://coveralls.io/repos/node-ffi-napi/ref-napi/badge.svg?branch=latest)](https://coveralls.io/r/node-ffi-napi/ref-napi?branch=latest)
 [![Dependency Status](https://david-dm.org/node-ffi-napi/ref-napi.svg?style=flat)](https://david-dm.org/node-ffi-napi/ref-napi)
 
+fix bug: "crash in v8::ArrayBuffer::GetBackingStore"
+
 This module is inspired by the old `Pointer` class from node-ffi, but with the
 intent of using Node's fast `Buffer` instances instead of a slow C++ `Pointer`
 class. These two concepts were previously very similar, but now this module
