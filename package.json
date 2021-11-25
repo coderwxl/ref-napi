@@ -28,9 +28,6 @@
     "type": "git",
     "url": "git://github.com/coderwxl/ref-napi.git"
   },
-  "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
-  },
   "main": "./lib/ref.js",
   "scripts": {
     "docs": "node docs/compile",
